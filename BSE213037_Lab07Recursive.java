@@ -28,26 +28,6 @@ public class BSE213037_Lab07Recursive {
             return x * XpowerY(x , y-1);
         }
     }
-    
-    public static int fabonacci(int num){
-        if (num <=1) {
-            return num;
-        }
-        else    
-        {
-            return fabonacci(num-1) + fabonacci(num-2);
-        }
-    }
-    
-    public static String stringReverse(String str){
-        if (str.length() <=1) {
-            return str;
-        }
-        else    
-        {
-            return stringReverse(str.substring(1)) + str.charAt(0);
-        }
-    }
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner obj = new Scanner(System.in);
@@ -55,5 +35,8 @@ public class BSE213037_Lab07Recursive {
         String input = obj.nextLine();
         String result = stringReverse(input);
         System.out.println("Reverse string of " + input + " is = " + result);
+
+        //change sthe code in the new branch version 2
+        System.out.println("HEllo world changes by new brnch version 2");
     }
 }
